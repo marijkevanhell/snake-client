@@ -7,13 +7,13 @@ const connect = function() {
     port: 50541
   });
 
-  conn.on("data", (data) => {
+  conn.on("data", () => {
     console.log("you ded cuz you idled");
   });
 
-  conn.on("connect", (connect) => {
+  conn.on("connect", () => {
     console.log("Successfully connected to game server");
-    conn.write("Name: MVH")
+    conn.write("Name: MVH");
   });
 
   // setTimeout((connect) => {

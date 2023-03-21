@@ -1,13 +1,15 @@
 const net = require("net");
+const { IP, PORT } = require("./constants");
 
 
 const connect = function() {
   const conn = net.createConnection({
-    host: 'localhost',
-    port: 50541
+    host: IP,
+    port: PORT,
   });
 
   conn.on("data", () => {
+    //appears when idling too long
     console.log("you ded cuz you idled");
   });
 

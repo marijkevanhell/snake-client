@@ -1,7 +1,9 @@
+const {moveUp, moveLeft, moveRight, moveDown} = require("./constants.js");
 // Stores the active TCP connection object.
 let connection;
 //accepts object to interact with server
 const setupInput = (conn) => {
+  //accepts object to interact with server
   connection = conn;
   
   const stdin = process.stdin;
@@ -17,13 +19,13 @@ const handleUserInput = function(key) {
     process.exit();
   }
   if (key === "w") {
-    connection.write("Move: up");
+    connection.write(moveUp);
   } if (key === "a") {
-    connection.write("Move: left");
+    connection.write(moveLeft);
   } if (key === "s") {
-    connection.write("Move: down");
+    connection.write(moveDown);
   } if (key === "d") {
-    connection.write("Move: right");
+    connection.write(moveRight);
   }
   if (key === "t") {
     connection.write("Say: Hi friend");

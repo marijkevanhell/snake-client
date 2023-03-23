@@ -18,17 +18,6 @@ const connect = function() {
     conn.write("Name: MVH");
   });
 
-  // setTimeout((connect) => {
-  //   console.log("Delayed for 5 second.");
-  //   conn.write("Move: up")
-  // }, "5000");
-
-  // setInterval((connect) => {
-  //   console.log("Delayed for 5 second.");
-  //   conn.write("Move: up")
-  // }, "5000");
- 
-
   // interpret incoming data as text
   conn.setEncoding("utf8");
   return conn;

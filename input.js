@@ -1,4 +1,5 @@
 const {moveUp, moveLeft, moveRight, moveDown} = require("./constants.js");
+
 // Stores the active TCP connection object.
 let connection;
 //accepts object to interact with server

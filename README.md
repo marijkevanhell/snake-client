@@ -8,7 +8,7 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["Grow the snake!"](Snek-Multiplayer.png)
+!["Grow the snake!"](Snek-Multiplayer.jpeg.png)
 - Enter 'l' or 't' to display a message
 
 
